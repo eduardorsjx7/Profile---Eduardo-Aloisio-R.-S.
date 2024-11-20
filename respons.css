@@ -1,0 +1,94 @@
+/* Responsividade */
+@media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    main{
+        margin-top: 190px;
+    }
+    h1,h2,h3 {
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
+  
+    header nav a {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+  
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .foto-perfil {
+        margin-bottom: 15px;
+        width: 120px; /* Ajuste da largura da foto de perfil para telas pequenas */
+        height: 120px; /* Ajuste da altura da foto de perfil para telas pequenas */
+    }
+  
+    .projetos-lista {
+        grid-template-columns: 1fr;
+        gap: 30px; /* Ajuste do espaçamento para telas menores */
+    }
+  
+    .projeto {
+        width: 100%;
+        padding: 20px; /* Ajuste no padding para garantir espaçamento em telas menores */
+    }
+  
+    .projeto p {
+        width: 100%;
+        height: auto; /* Ajuste da altura do texto */
+        padding: 0;
+        font-size: 0.9rem; /* Ajuste no tamanho do texto nos projetos */
+    }
+  
+    .projeto h3 {
+        padding: 15px 0;
+        font-size: 1.2rem; /* Reduz o tamanho do título nos projetos */
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    body {
+        font-size: 1rem; /* Ajuste do tamanho base da fonte */
+    }
+    
+  
+    header nav a {
+        font-size: 1rem; /* Ajuste da fonte de navegação */
+    }
+  
+    .foto-perfil {
+        width: 150px; /* Ajuste para telas grandes */
+        height: 150px; /* Ajuste para telas grandes */
+    }
+  
+    .projeto {
+        padding: 25px; /* Ajuste do padding nas divs de projetos */
+        width: 380px; /* Ajuste da largura para não ficar muito largo */
+    }
+  
+    .projeto p {
+        width: 300px; /* Ajuste da largura do texto */
+        font-size: 1rem; /* Tamanho do texto ajustado para telas grandes */
+    }
+  
+    .projeto h3 {
+        padding: 20px 0;
+        font-size: 1.5rem; /* Ajuste no tamanho do título nos projetos */
+    }
+  
+    .projetos-lista {
+        gap: 40px; /* Ajuste do espaçamento nas telas grandes */
+    }
+  }
+  
+  
