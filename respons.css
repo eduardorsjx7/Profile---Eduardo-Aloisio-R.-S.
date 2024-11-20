@@ -1,20 +1,46 @@
 /* Responsividade */
 @media (max-width: 768px) {
+    html{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     body{
         width: 100%;
     }
     header nav {
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
+    #sobre_mim p {
+        width: 90%;
+        padding-top: 30px;
+    }
+    #icons{
+        margin: 10px;
+    }
+    .text_intro h1{
+        font-size: 37px;
+
+    }
     main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 190px;
+        width: 100%;
     }
     h1,h2,h3 {
-        font-size: 30px;
+        width: 100%;
+        font-size: 35px;
     }
     p{
-        font-size: 30px;
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
     }
   
     header nav a {
@@ -29,8 +55,7 @@
   
     .foto-perfil {
         margin-bottom: 15px;
-        width: 120px; /* Ajuste da largura da foto de perfil para telas pequenas */
-        height: 120px; /* Ajuste da altura da foto de perfil para telas pequenas */
+        width: 250px;  
     }
   
     .projetos-lista {
@@ -54,6 +79,38 @@
         padding: 15px 0;
         font-size: 1.2rem; /* Reduz o tamanho do título nos projetos */
     }
+
+    #img_box {
+        width: 156px;
+        height: 120px;
+        padding: 10px;
+    }
+    .box-img-text p{
+        padding: 10px;
+    }
+    .box-img{
+        row-gap: 75px;
+    }
+    .contato_text {
+        padding: 6px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contato_text p{
+        font-size: 12px;
+    }
+    footer p {
+        font-size: 11px;
+        color: #fff;
+        padding: 20px;
+        width: auto;
+    }
+
+
+
   }
   
   @media (min-width: 1920px) {
